@@ -3,7 +3,7 @@ import pandas as pd
 from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
 
-DATA = Path(__file__).resolve().parents[1] / "data" / "spacex_launch_dash.csv"
+DATA = Path(__file__).resolve().parent / "data" / "spacex_launch_dash.csv"
 df = pd.read_csv(DATA)
 app = Dash(__name__)
 

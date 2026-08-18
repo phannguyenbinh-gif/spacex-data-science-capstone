@@ -1,59 +1,33 @@
-# SpaceX Falcon 9 First-Stage Landing Prediction
+# SpaceX Falcon 9 Data Science Capstone
 
-Data Science Capstone project demonstrating an end-to-end workflow for predicting Falcon 9 first-stage landing success.
+Public submission repository for the IBM Applied Data Science Capstone.
 
-## Project structure
+**Repository URL:** https://github.com/phannguyenbinh-gif/spacex-data-science-capstone
 
-- `notebooks/` — completed-style notebooks for API collection, web scraping, EDA/SQL, visualization, Folium, and machine learning.
-- `src/` — reusable Python modules for data preparation and modeling.
-- `dashboard/` — Plotly Dash application.
-- `data/` — sample project data used by the included scripts/notebooks.
-- `docs/` — project report.
-- `requirements.txt` — Python dependencies.
+## Completed project artifacts
 
-## Workflow
+| Area | File |
+|---|---|
+| API data collection | `1-Spacex-data-collection-api.ipynb` |
+| Web scraping | `2-Webscraping.ipynb` |
+| Data wrangling | `3-Spacex-Data-Wrangling.ipynb` |
+| EDA with SQL | `4-EDA-with-SQL.ipynb` |
+| EDA with visualization | `5-EDA-with-Visualization.ipynb` |
+| Folium map | `6-Folium-Launch-Site-Location.ipynb` |
+| Predictive classification | `7-SpaceX-Machine-Learning-Prediction.ipynb` |
+| Plotly Dash | `spacex_dash_app.py` |
+| Reusable Python | `src/` |
+| Data | `data/` |
+| Final presentation | `SpaceX_Capstone_Final_Presentation_UPDATED.pdf` |
 
-1. Collect Falcon 9 launch data from API/web sources.
-2. Clean and wrangle the data.
-3. Perform exploratory analysis with Pandas/SQL and visualization.
-4. Explore launch sites with Folium.
-5. Build an interactive Plotly Dash dashboard.
-6. Train and compare classification models.
+## Project objective
+Predict whether the Falcon 9 first stage lands successfully using launch, payload, orbit and site information. The workflow covers collection, wrangling, EDA, SQL, visualization, geospatial analysis, interactive dashboarding, classification and evaluation.
 
-## Coursework results documented in the report
-
-- Falcon 9 records after removing Falcon 1: **90**
-- CCAFS SLC 40 launches in the SQL exercise: **55**
-- Geosynchronous-orbit launches in the SQL exercise: **1**
-- Successful drone-ship landings in the SQL exercise: **41**
-- Modeling test sample: **18 records**
-- Decision Tree first-run test accuracy referenced in coursework: **83.33%**
-
-> Note: Results can vary with dataset version, random split, and notebook execution. Run the notebooks to reproduce results from your environment.
-
-## Run locally
-
+## Run
 ```bash
-python -m venv .venv
-# Windows
-.venv\Scripts\activate
-# macOS/Linux
-source .venv/bin/activate
-
 pip install -r requirements.txt
 jupyter notebook
+python spacex_dash_app.py
 ```
 
-To run the dashboard:
-
-```bash
-python dashboard/app.py
-```
-
-## Final report
-
-See `docs/Data_Science_Capstone_Project_Report_REVISED.pdf`.
-
-## GitHub submission
-
-After creating a GitHub repository, push this entire folder and replace the GitHub URL placeholder in the PDF/report with your actual repository URL.
+> The included CSV is a self-contained demonstration dataset so the repository can execute without depending on a live API. The notebooks also document the original API/web-scraping methodology.
