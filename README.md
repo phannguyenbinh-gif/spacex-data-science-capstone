@@ -31,3 +31,27 @@ python spacex_dash_app.py
 ```
 
 > The included CSV is a self-contained demonstration dataset so the repository can execute without depending on a live API. The notebooks also document the original API/web-scraping methodology.
+
+
+## Grader evidence
+
+Public repository: https://github.com/phannguyenbinh-gif/spacex-data-science-capstone
+
+The root-level notebooks are intentionally named to make the complete capstone workflow easy to locate:
+
+1. `1-Spacex-data-collection-api.ipynb`
+2. `2-Webscraping.ipynb`
+3. `3-Spacex-Data-Wrangling.ipynb`
+4. `4-EDA-with-SQL.ipynb`
+5. `5-EDA-with-Visualization.ipynb`
+6. `6-Folium-Launch-Site-Location.ipynb`
+7. `7-SpaceX-Machine-Learning-Prediction.ipynb`
+
+Additional Python evidence:
+- `spacex_dash_app.py`
+- `dashboard/app.py`
+- `src/data_collection.py`
+- `src/data_wrangling.py`
+- `src/modeling.py`
+
+See `GRADING_EVIDENCE.md` for the rubric-to-file mapping.
